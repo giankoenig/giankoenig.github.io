@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
-	<form>
-		<input id="username">
-		<input id="password">
-		<button type="button" onclick="getInfo()">click me</button>
-	</form>
-	<script src="js/main.js"></script>
+	<div class="container">
+		<form action="" class="form" id="login">
+			<h1 class="form__title">Login</h1>
+			<div class="form__message form_essage--error">Incorrect username/password combination.</div>
+			<div class="form__input-group">
+				<input type="text" class="form__input" autofocus placeholder="Username or Email ">
+				<div class="form__input-error-message">This is an error message!</div>
+			</div>
+		</form>
+	</div>
+	<script src="./src/main.js"></script>
 </body>
 </htm>
